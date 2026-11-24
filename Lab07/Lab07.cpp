@@ -39,6 +39,16 @@ int main()
     Swap(a, b);
     cout << "A: " << a << " B: " << b << endl;
     */
+
+    // Zadanie 1
+    /*
+    int a;
+    int* ptr;
+    ptr = &a;
+
+    cout << "podaj liczbe: ", cin >> *ptr;
+    cout << "liczba to: " << a;
+    */
     
 }
 
