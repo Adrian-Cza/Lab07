@@ -1,9 +1,13 @@
 ﻿#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+
 
 using namespace std;
 
 int a = 20, b = 10;
 void Swap(int& a, int& b);
+float Srednia(float* tablica, int rozmiar);
 
 int main()
 {
@@ -97,6 +101,22 @@ int main()
         wsk--;
     }
     */
+
+    // Zadanie 4
+    /*
+    srand(time(0));
+
+    int rozmiar;
+    cout << "Podaj rozmiar tablicy: ", cin >> rozmiar;
+
+    float* tab = new float[rozmiar];
+
+    for (int i = 0; i < rozmiar; i++) {
+        tab[i] = rand() % 100;
+    }
+
+    cout << "Srednia: " << Srednia(tab, rozmiar) << endl;
+    */
     
 }
 
@@ -104,4 +124,12 @@ void Swap(int& a, int& b) {
     int temp1 = a, temp2 = b;
     a = temp2;
     b = temp1;
+}
+
+float Srednia(float* tablica, int rozmiar) {
+    float suma = 0;
+    for (int i = 0; i < rozmiar; i++) {
+        suma += tablica[i];
+    }
+    return suma / rozmiar;
 }
