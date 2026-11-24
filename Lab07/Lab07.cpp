@@ -11,6 +11,7 @@ float Srednia(float* tablica, int rozmiar);
 
 int main()
 {
+    srand(time(0));
     // Zadanie 2.1
     /*
         const int size = 3;
@@ -104,8 +105,6 @@ int main()
 
     // Zadanie 4
     /*
-    srand(time(0));
-
     int rozmiar;
     cout << "Podaj rozmiar tablicy: ", cin >> rozmiar;
 
@@ -117,6 +116,51 @@ int main()
 
     cout << "Srednia: " << Srednia(tab, rozmiar) << endl;
     */
+    
+    // Zadanie 5
+    int rozmiar;
+    cout << "Podaj rozmiar tablicy: ", cin >> rozmiar;
+    
+    int* tab1 = new int[rozmiar];
+    int* tab2 = new int[rozmiar];
+
+    for (int i = 0; i < rozmiar; i++) {
+        tab1[i] = rand() % 100;
+        tab2[i] = rand() % 100;
+    }
+
+    cout << "Dodawanie:" << endl;
+    for (int i = 0; i < rozmiar; i++) {
+        cout << tab1[i] + tab2[i] << endl;
+    }
+
+    cout << "Mnozenie:" << endl;
+    for (int i = 0; i < rozmiar; i++) {
+        cout << tab1[i] * tab2[i] << endl;
+    }
+    
+    int a = tab1[0], b = tab2[0];
+    for (int i = 0; i < rozmiar; i++) {
+        cout << tab1[i] << " " << tab2[i] << endl << endl;
+        if (a < tab1[i]) {
+            a = tab1[i];
+        }
+        if (b > tab1[i]) {
+            b = tab1[i];
+        }
+    }
+    cout << "Dla tab1: MAX = " << a << " MIN = " << b << endl;
+
+    for (int i = 0; i < rozmiar; i++) {
+        if (a < tab2[i]) {
+            a = tab2[i];
+        }
+        if (b > tab2[i]) {
+            b = tab2[i];
+        }
+    }
+    cout << "Dla tab2: MAX = " << a << " MIN = " << b;
+
     
 }
 
