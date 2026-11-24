@@ -50,6 +50,33 @@ int main()
     cout << "liczba to: " << a;
     */
     
+    // Zadanie 2
+    /*
+    int jakas_tablica[10];
+    int* wsk;
+    wsk = jakas_tablica;
+    for (int i = 0; i < 10; i++) {
+        cout << jakas_tablica[i] << endl;
+    }
+    wsk += 7;
+    *wsk = 77;
+    cout << endl;
+    for (int i = 0; i < 10; i++) {
+        cout << jakas_tablica[i] << endl;
+    }
+    */
+
+    // Zadnie 2.1
+    /*
+    int tab[10] = { 0 };
+    int* wsk;
+    wsk = tab;
+
+    for (int i = 0; i < 10; i++) {
+        *wsk = 9;
+        wsk++;
+    }
+    */
 }
 
 void Swap(int& a, int& b) {
