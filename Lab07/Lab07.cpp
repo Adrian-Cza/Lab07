@@ -77,6 +77,27 @@ int main()
         wsk++;
     }
     */
+
+    // Zadanie 3
+    /*
+    int a;
+    cout << "Podaj rozmiar tablicy: ", cin >> a;
+
+    float* tab = new float[a];
+    for (int i = 0; i < a; i++) {
+        tab[i] = static_cast<float>(i);
+    }
+    float* wsk = &tab[a - 1];
+
+    while (1) {
+        cout << "Wartosc tablicy: " << *wsk << endl;
+        if (*wsk == 0) {
+            break;
+        }
+        wsk--;
+    }
+    */
+    
 }
 
 void Swap(int& a, int& b) {
