@@ -2,6 +2,9 @@
 
 using namespace std;
 
+int a = 20, b = 10;
+void Swap(int& a, int& b);
+
 int main()
 {
     // Zadanie 2.1
@@ -29,5 +32,18 @@ int main()
         p++;
     }
     */
+
+    // Zadanie 2.3
+    /*
+    cout << "A: " << a << " B: " << b << endl;
+    Swap(a, b);
+    cout << "A: " << a << " B: " << b << endl;
+    */
     
+}
+
+void Swap(int& a, int& b) {
+    int temp1 = a, temp2 = b;
+    a = temp2;
+    b = temp1;
 }
